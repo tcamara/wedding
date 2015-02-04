@@ -1,26 +1,21 @@
+body { color: #222; font-family: 'Linden Hill', serif; font-size: 35px; background-image: url(../images/Paper-Grunge-Background-22.jpg); background-size: cover; }
+
 a { color: black; text-decoration: none; }
 a:hover, a:active { color: black; }
 
-h1        { font-family: 'Linden Hill', serif; font-size: 100px; margin: 0px 200px; padding: 0px; text-align: center; }
-h2        { font-family: 'Linden Hill', serif; font-size: 65px;  margin: 0px 200px; padding: 0px; text-align: center; }
-.byline   { font-family: 'Linden Hill', serif; font-size: 35px;  margin: 0px; padding: 10px 0px 10px 0px; text-align: center; }
-h3        { font-family: 'Linden Hill', serif; font-size: 35px;  margin: 0px 200px; padding: 0px; text-align: center; }
-.dateline { font-family: 'Linden Hill', serif; font-size: 35px; position: absolute; bottom: 20px; left: 39%; }
+h1 { font-size: 100px; text-align: center; }
+h2 { font-size: 65px;  text-align: center; }
+h3 { font-size: 40px;  text-align: center; }
 
 .section { background-size: cover; }
-.script { font-family: 'Ruritania', script; }
+.page { margin: -1em auto 0 auto; width: 50%; font-size: 45px; font-family: 'Linden Hill', serif; text-align: justify; }
+.section .page:first-letter { font-family: 'rothenburg', script; font-size: 80px; margin-left: -15px; padding-right: 5px; }
+.script { font-family: 'rothenburg', script; }
 
-.page { margin: 0 auto; width: 50%; font-size: 40px; font-family: 'Linden Hill', serif; }
-
-.section .page:first-letter { font-family: 'Ruritania', script; font-size: 70px; margin-left: -15px; padding-right: 5px; }
-
-#fp-nav-vert-up { position: fixed; top: 10; left: 50% }
-#fp-nav-vert-down { position: fixed; bottom: 10; left: 50% }
-
-/* font-family: 'Mr De Haviland', script; */
-
-body { background-image: url(../images/paper_texture.png); }
-
+.fp-nav-vert { position: absolute; width: 100%; font-size: 40px; }
+.fp-nav-vert a { display: block; text-align: center; text-decoration: none; cursor: pointer; }
+.fp-nav-vert.up { top: 10px; display: none;}
+.fp-nav-vert.down { bottom: 10px; }
 
 .ribbon { position: absolute; width: 80px; top: 0px; right: 300px; padding: 0 0 20px 0; }
 .ribbon div { background: #5d83c4; padding: 20px 0px; text-align: center; }
@@ -32,27 +27,13 @@ body { background-image: url(../images/paper_texture.png); }
     border-bottom: 20px solid transparent;
 }
 
-
-
-
-.script_icon { font-family: nymphetteregular; font-size: 40px; }
-
 @font-face {
-    font-family: 'nymphetteregular';
-    src: url('../fonts/nymphette/Nymphette-webfont.eot');
-    src: url('../fonts/nymphette/Nymphette-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/nymphette/Nymphette-webfont.woff') format('woff'),
-         url('../fonts/nymphette/Nymphette-webfont.ttf') format('truetype'),
-         url('../fonts/nymphette/Nymphette-webfont.svg#nymphetteregular') format('svg');
+    font-family: 'rothenburg';
+    src: url('../fonts/rothenburgdecorative/rothenbg-webfont.eot');
+    src: url('../fonts/rothenburgdecorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rothenburgdecorative/rothenbg-webfont.woff') format('woff'),
+         url('../fonts/rothenburgdecorative/rothenbg-webfont.ttf') format('truetype'),
+         url('../fonts/rothenburgdecorative/rothenbg-webfont.svg#rothenburg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
-
-@font-face {
-    font-family: 'Ruritania';
-    src: url('../fonts/ruritania/Ruritania.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-

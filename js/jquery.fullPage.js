@@ -188,6 +188,17 @@
 			if (prev.length) {
 				scrollPage(prev, null, true);
 			}
+
+			if(options.verticalNav !== 'undefined') {
+				prev = $('.fp-section.active').prev('.fp-section');
+				if(!prev.length) {
+					$('.fp-nav-vert.up').fadeOut();
+					$('.fp-nav-vert.down').fadeIn();
+				}
+				else {
+					$('.fp-nav-vert').fadeIn();
+				}
+			}
 		};
 
 		$.fn.fullpage.moveSectionDown = function (){
@@ -201,6 +212,17 @@
 
 			if(next.length){
 				scrollPage(next, null, false);
+			}
+
+			if(options.verticalNav !== 'undefined') {
+				next = $('.fp-section.active').next('.fp-section');
+				if(!next.length) {
+					$('.fp-nav-vert.down').fadeOut();
+					$('.fp-nav-vert.up').fadeIn();
+				}
+				else {
+					$('.fp-nav-vert').fadeIn();
+				}
 			}
 		};
 
@@ -499,11 +521,18 @@
 		}
 
 		/**
-		* Creates the control arrows for the given section
+		* Creates the vertical control arrows for the given section
 		*/
 		function createVerticalArrows(){
-			$('body').append('<div id="fp-nav-vert-up"><a>^</a></div>');
-			$('body').append('<div id="fp-nav-vert-down"><a>v</a></div>');
+			$('body').append('<div class="fp-nav-vert up"><a><img src="images/arrow_up.png" alt="^" /></a></div>');
+			$('body').append('<div class="fp-nav-vert down"><a><img src="images/arrow_down.png" alt="v" /></a></div>');
+
+			$('.fp-nav-vert.up').on('click', function() {
+				$.fn.fullpage.moveSectionUp();
+			});
+			$('.fp-nav-vert.down').on('click', function() {
+				$.fn.fullpage.moveSectionDown();
+			});
 		}
 
 		/**
