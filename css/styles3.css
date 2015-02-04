@@ -1,0 +1,58 @@
+a { color: black; text-decoration: none; }
+a:hover, a:active { color: black; }
+
+h1        { font-family: 'Linden Hill', serif; font-size: 100px; margin: 0px 200px; padding: 0px; text-align: center; }
+h2        { font-family: 'Linden Hill', serif; font-size: 65px;  margin: 0px 200px; padding: 0px; text-align: center; }
+.byline   { font-family: 'Linden Hill', serif; font-size: 35px;  margin: 0px; padding: 10px 0px 10px 0px; text-align: center; }
+h3        { font-family: 'Linden Hill', serif; font-size: 35px;  margin: 0px 200px; padding: 0px; text-align: center; }
+.dateline { font-family: 'Linden Hill', serif; font-size: 35px; position: absolute; bottom: 20px; left: 39%; }
+
+.section { background-size: cover; }
+.script { font-family: 'Ruritania', script; }
+
+.page { margin: 0 auto; width: 50%; font-size: 40px; font-family: 'Linden Hill', serif; }
+
+.section .page:first-letter { font-family: 'Ruritania', script; font-size: 70px; margin-left: -15px; padding-right: 5px; }
+
+#fp-nav-vert-up { position: fixed; top: 10; left: 50% }
+#fp-nav-vert-down { position: fixed; bottom: 10; left: 50% }
+
+/* font-family: 'Mr De Haviland', script; */
+
+body { background-image: url(../images/paper_texture.png); }
+
+
+.ribbon { position: absolute; width: 80px; top: 0px; right: 300px; padding: 0 0 20px 0; }
+.ribbon div { background: #5d83c4; padding: 20px 0px; text-align: center; }
+.ribbon a { color: #fff; }
+.ribbon div:after {
+    position: absolute; width: 0; height: 0; left: 0; bottom: 0; content: '';
+    border-left: 40px solid #5d83c4;
+    border-right: 40px solid #5d83c4;
+    border-bottom: 20px solid transparent;
+}
+
+
+
+
+.script_icon { font-family: nymphetteregular; font-size: 40px; }
+
+@font-face {
+    font-family: 'nymphetteregular';
+    src: url('../fonts/nymphette/Nymphette-webfont.eot');
+    src: url('../fonts/nymphette/Nymphette-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nymphette/Nymphette-webfont.woff') format('woff'),
+         url('../fonts/nymphette/Nymphette-webfont.ttf') format('truetype'),
+         url('../fonts/nymphette/Nymphette-webfont.svg#nymphetteregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Ruritania';
+    src: url('../fonts/ruritania/Ruritania.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <title>Tim &amp; Sarah - The Next Chapter</title>
+
+    <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Mr+De+Haviland" />
+    <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" />
+    <link rel="stylesheet" type='text/css' href="css/styles3.css" />
+    <link rel="stylesheet" type='text/css' href="css/jquery.fullPage.css" />
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$('#fullpage').fullpage({
+    			onLeave: function(index, newIndex, direction) {
+    				var num = 300;
+
+    				setTimeout(function() {
+    					$('.section-' + index + ' .start_hidden').css('opacity', 0);
+    				}, 500);
+
+    				$('.section-' + newIndex + ' .start_hidden').each(function() {
+    					var self = this;
+    					setTimeout(function() {
+    						$(self).animate({ opacity: 1 }, 1500);
+    					}, num += 1000);
+    				});
+    			}
+    		});
+		});
+    </script>
+
+</head>
+<body>
+    <div id="fullpage">
+	    <div class="section section-1">
+	    	<h1>Once upon a time...</h1>
+	   	</div>
+	    <div class="section section-2">
+	    	<h2>A boy and a girl met</h2>
+	    	<h2 class="start_hidden">in biology class, freshman year of high school</h2>
+	    	<h2 class="start_hidden">It wasn't really your typical storybook romance</h2>
+	   	</div>
+	   	<div class="section section-3">
+	    	<h2>After graduation, some distance taught them what they had taken for granted</h2>
+	    	<h2 class="start_hidden">Although separated by 1200 miles, their relationship blossomed</h2>
+	    	<h2 class="start_hidden">So did their cell phone bills</h2>
+	   	</div>
+	   	<div class="section section-4">
+	    	<h2>After 3 years, they were finally reunited for good</h2>
+	    	<h2 class="start_hidden">They moved in together, bought some Ikea furniture, and started going on adventures</h2>
+	    	<h2 class="start_hidden">They even adopted a kitty with velociraptor DNA</h2>
+	   	</div>
+	   	<div class="section section-5">
+	    	<h2>Now, they're inviting you to help them write the next chapter</h2>
+	   	</div>
+	   	<div class="section section-6">
+	    	<h1>The Next Chapter</h1>
+	    	<h2><span class="script_icon">A</span> A Wedding <span class="script_icon">B</span></h2>
+        	<div class="byline">by</div>
+        	<h3>Tim Camara&nbsp; &amp; &nbsp;Sarah Baugher</h3>
+	   	</div>
+	   	<div class="section">
+	   		<h3>The Bride?</h3>
+	   	</div>
+	   	<div class="section">
+	   		<h3>The Groom?</h3>
+	   	</div>
+	   	<div class="section">
+	   		<h3>Information</h3>
+	   		Date/time: <br />
+	   		Address: <br />
+	   		Recommended Dress: <br />
+	   		Food arrangements: <br />
+	   		Brief schedule? <br />
+	   	</div>
+	   	<div class="section">
+	   		<h3>Registry</h3>
+
+	   	</div>
+	   	<div class="section">
+	   		<h3>RSVP</h3>
+	   		Form goes here <br />
+	   	</div>
+	</div>
+
+
+
+
+
+    <div class="wrapper" style="display: none;">
+        <div class="ribbon">
+            <div>
+                <a href="rsvp.html">RSVP</a>
+            </div>
+        </div>
+
+        <h1>The Next Chapter</h1>
+        <h2><span class="script_icon">A</span> A Wedding <span class="script_icon">B</span></h2>
+        <div class="byline">by</div>
+        <h3>Tim Camara&nbsp; &amp; &nbsp;Sarah Baugher</h3>
+
+        <div class="dateline">
+        	September 12th, 2015
+        </div>
+
+        <div class="toc">
+        	<h2>Table of Contents</h2>
+            <a href="#">Preface</a>
+            <a href="#">Table of Contents</a>
+            <a href="#">Dramatis Personae</a>
+            <a href="#">Our Story</a>
+            <a href="#">Information</a>
+            <a href="#">Photos</a>
+            <a href="#">Registry</a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <h2>The Bride</h2>
+                    <p>
+                        Sarah Cathlene Baugher is
+                    </p>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <h2>The Groom</h2>
+                    <p>
+                        Timothy Allen Camara is
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                &copy; 2014 Tim Camara
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
